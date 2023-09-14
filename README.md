@@ -213,7 +213,7 @@ Project Link: [https://github.com/marcbenedi/hydra_slurmpp_launcher](https://git
 [issues-shield]: https://img.shields.io/github/issues/marcbenedi/hydra_slurmpp_launcher.svg?style=for-the-badge
 [issues-url]: https://github.com/marcbenedi/hydra_slurmpp_launcher/issues
 [license-shield]: https://img.shields.io/github/license/marcbenedi/hydra_slurmpp_launcher.svg?style=for-the-badge
-[license-url]: https://github.com/marcbenedi/hydra_slurmpp_launcher/blob/master/LICENSE
+[license-url]: https://github.com/marcbenedi/hydra_slurmpp_launcher/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcbenedi
 [product-screenshot]: images/screenshot.png
