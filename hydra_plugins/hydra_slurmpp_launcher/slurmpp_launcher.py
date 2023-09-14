@@ -18,9 +18,9 @@ from hydra.core.config_store import ConfigStore
 log = logging.getLogger(__name__)
 
 @dataclass
-class CustomizableSlurmConf(SlurmQueueConf):
+class SlurmppConf(SlurmQueueConf):
     _target_: str = (
-        "hydra_plugins.hydra_customizable_slurm_launcher.customizable_slurm_launcher.CustomizableSlurmLauncher"
+        "hydra_plugins.hydra_slurmpp_launcher.slurmpp_launcher.SlurmppLauncher"
     )
 
     python_pre: Optional[str] = None
@@ -29,13 +29,13 @@ class CustomizableSlurmConf(SlurmQueueConf):
 # Register as hydra launcher
 ConfigStore.instance().store(
     group="hydra/launcher",
-    name="customizable_slurm_launcher",
-    node=CustomizableSlurmConf(),
-    provider="customizable_slurm_launcher",
+    name="slurmpp_launcher",
+    node=SlurmppConf(),
+    provider="slurmpp_launcher",
 )
 
 
-class CustomizableSlurmLauncher(SlurmLauncher):
+class SlurmppLauncher(SlurmLauncher):
 
     def __init__(self, python: str, python_pre: Optional[str], **params: Any) -> None:
         super().__init__(**params)
